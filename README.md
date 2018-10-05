@@ -662,7 +662,7 @@ Currently, we have PHPUnit tests and Postman tests.
 
 #### PHPUnit tests for the Professor M Module Loadable Package
 [PHPUnit](https://phpunit.de/) is a testing framework for PHP.  The PHPUnit test files are located in 
-[package/src/custom/tests/School/unit-php](package/src/custom/tests/School/unit-php).  
+[package/src/custom/tests/School/unit-php](package/src/custom/tests/unit-php/School/unit-php).  
 
 ##### Manual execution
 
@@ -720,14 +720,14 @@ Professor M and the associated tests will be installed in to the Sugar source di
 Prepare to run the Professor M PHPUnit tests by executing the following commands:
 ```
 $ cd /path/to/sugar_source_dir
-$ cd custom/tests/School/unit-php
-$ chmod +x ../../../../vendor/bin/phpunit
+$ cd custom/tests/unit-php
+$ chmod +x ../../../vendor/bin/phpunit
 ```
 
 Run the Professor M PHPUnit tests by executing the following command from the `/custom/tests/School/unit-php` directory:
 
 ```
-$ ../../../../vendor/bin/phpunit
+$ ../../../vendor/bin/phpunit --testsuite custom
 ```
 
 ##### Automatic execution in Travis CI
